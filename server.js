@@ -25,7 +25,7 @@ app.use(middleware.logger);
 
 // to add middleware for specific endpoint at it as second argument
 app.get('/about', middleware.requireAuthentication, function(req, res) {
-	res.send('About Us');
+	res.send('About Us!');
 });
 
 // this folder will be the local root folder
