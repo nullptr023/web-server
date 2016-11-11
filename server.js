@@ -1,7 +1,7 @@
 var express = require('express');
 // create express app
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 // create endpoint
 var middleware = require('./middleware.js');
 
